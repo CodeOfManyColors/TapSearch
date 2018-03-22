@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PuzzleLetterView" customModule="TapSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtK-Na-Cmr">
+                    <rect key="frame" x="16.5" y="16.5" width="50" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-x7-KU5">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                            <color key="textColor" red="0.38163648832136232" green="0.536878048517198" blue="0.63061586210851062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.99215686274509807" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WYY-x7-KU5" secondAttribute="bottom" id="9Bp-h9-631"/>
+                        <constraint firstItem="WYY-x7-KU5" firstAttribute="top" secondItem="qtK-Na-Cmr" secondAttribute="top" id="Qey-WR-pfR"/>
+                        <constraint firstAttribute="trailing" secondItem="WYY-x7-KU5" secondAttribute="trailing" id="Z8D-jS-Hre"/>
+                        <constraint firstItem="WYY-x7-KU5" firstAttribute="leading" secondItem="qtK-Na-Cmr" secondAttribute="leading" id="iaw-nu-J0j"/>
+                        <constraint firstAttribute="height" constant="70" id="oNY-0M-L2P"/>
+                        <constraint firstAttribute="width" constant="50" id="z7o-Es-HTB"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="7nM-Fr-SJS"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qtK-Na-Cmr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oXc-nx-ZhQ"/>
+                <constraint firstItem="qtK-Na-Cmr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p11-ce-NCz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundShapeView" destination="qtK-Na-Cmr" id="JGm-Wm-Oes"/>
+                <outlet property="letterHeight" destination="oNY-0M-L2P" id="n1S-Ve-Sji"/>
+                <outlet property="letterLabel" destination="WYY-x7-KU5" id="dlx-BV-8cm"/>
+                <outlet property="letterWidth" destination="z7o-Es-HTB" id="Ku3-8T-t4q"/>
+            </connections>
+            <point key="canvasLocation" x="168.5" y="-281.5"/>
+        </view>
+    </objects>
+</document>

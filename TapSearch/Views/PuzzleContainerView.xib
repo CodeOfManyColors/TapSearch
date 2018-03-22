@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uC2-Xm-LZK" customClass="PuzzleContainerView" customModule="TapSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="569"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhH-j6-0ao">
+                    <rect key="frame" x="135.5" y="504" width="250" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="4ZP-kN-FcJ"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4u6-9F-9sL"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="RZx-Tm-tXP"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="YYy-eB-yFp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96334843593423247" green="0.96691167601982331" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KhH-j6-0ao" firstAttribute="width" secondItem="uC2-Xm-LZK" secondAttribute="width" multiplier="0.65" priority="990" id="HaQ-eK-yb6"/>
+                <constraint firstItem="KhH-j6-0ao" firstAttribute="height" secondItem="uC2-Xm-LZK" secondAttribute="height" multiplier="0.1" priority="990" id="NYk-XF-wxR"/>
+                <constraint firstItem="KhH-j6-0ao" firstAttribute="centerX" secondItem="uC2-Xm-LZK" secondAttribute="centerX" id="zFx-Qs-O4R"/>
+                <constraint firstItem="Jca-1c-xZB" firstAttribute="bottom" secondItem="KhH-j6-0ao" secondAttribute="bottom" constant="15" id="zQ9-5D-JSM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Jca-1c-xZB"/>
+            <connections>
+                <outlet property="nextButton" destination="KhH-j6-0ao" id="a2Q-v5-25a"/>
+            </connections>
+            <point key="canvasLocation" x="-54.5" y="-1090.5"/>
+        </view>
+    </objects>
+</document>
